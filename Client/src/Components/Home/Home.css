@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.content{
+    /* background-image: url("../../../public/images/home.jpg"); */
+    /* background-image: url("https://www.bluestreamfiber.com/wp-content/uploads/2022/09/hpp-security.jpg"); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-color: #06050B; */
+    /* background-color: #141225; */
+}
+@media all and (max-width:600px){
+  #home-content{
+      padding: 20px;
+  }
+}
+.innerContent{
+    color: white;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+}
+.container1 {
+    width: 100%;
+    min-height: 460px;
+    background-color: #020103;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: left;
+    color: white;
+  }
+  
+  .container1 img {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    object-fit: contain;
+    object-position: center;
+    align-self: center;
+  
+    max-width: 100%;
+    height: 350px;
+  }
+  
+  .container1 .image {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    align-self: center;
+    object-fit: contain;
+  }
+/* footer */
+.footer{
+    display: flex;
+    background-color: #020103;
+    color: white;
+    justify-content: space-around;
+    padding: 20px;
+}
+.left{
+    text-align: center;
+}
+ul{
+    display: flex;
+    justify-content: space-around;
+}
+ul li{
+    list-style: none;
+}
+a{
+    color: white;
+}
+
+/* Login */
+
+section 
+{
+  /* position: absolute; */
+  width: 100vw;
+  margin-top: 50px;
+  /* height: 100vh; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+section .signin
+{
+  /* position: absolute; */
+  width: 400px;
+  background: #222;  
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  border-radius: 4px;
+  box-shadow: 0 15px 35px rgba(0,0,0,9);
+}
+section .signin .content 
+{
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+}
+section .signin .content h2 
+{
+  font-size: 2em;
+  color: #0096FF;
+  text-transform: uppercase;
+}
+section .signin .content .form 
+{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+section .signin .content .form .inputBox
+{
+  position: relative;
+  width: 100%;
+}
+section .signin .content .form .inputBox input 
+{
+  position: relative;
+  width: 100%;
+  background: #333;
+  border: none;
+  outline: none;
+  padding: 25px 10px 7.5px;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1em;
+}
+section .signin .content .form .inputBox i 
+{
+  position: absolute;
+  left: 0;
+  padding: 15px 10px;
+  font-style: normal;
+  color: #aaa;
+  transition: 0.5s;
+  pointer-events: none;
+}
+.signin .content .form .inputBox input:focus ~ i,
+.signin .content .form .inputBox input:valid ~ i
+{
+  transform: translateY(-7.5px);
+  font-size: 0.8em;
+  color: #fff;
+}
+.signin .content .form .links 
+{
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.signin .content .form .links a 
+{
+  color: #fff;
+  text-decoration: none;
+}
+.signin .content .form .links a:nth-child(2)
+{
+  color: #0096FF;
+  font-weight: 600;
+}
+.signin .content .form .inputBox input[type="submit"]
+{
+  padding: 10px;
+  background: #0096FF;
+  color: #000;
+  font-weight: 600;
+  font-size: 1.35em;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+}
+input[type="submit"]:active
+{
+  opacity: 0.6;
+}
+
+
+/* Contact.js */
+
+.about-image{
+  height: 25rem;
+  width: 40% 
+}
+.about-text{
+  width:60%;
+  display:flex;
+  text-align:center;
+  margin-right:5rem;
+  align-items:center;
+  justify-content:center;
+  color:white;
+  font-size:2rem
+}
+@media all and (max-width:600px){
+  .about-content{
+      flex-direction: column;
+  }
+  .about-image{
+    width: 100%;
+    height: 50vh;
+  }
+  .about-text{
+    display:flex;
+    margin-right: 0;
+    justify-content:center;
+    font-size:1.5rem
+  }
+}
