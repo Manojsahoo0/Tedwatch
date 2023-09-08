@@ -1,6 +1,6 @@
-# Netflix Clone
+# Tedwatch
 
-- **Checkout branch "React-View" for frontend only Netflix Clone with React Redux**
+- **Tedwatch is a video streaming application developed with MERN stack**
 
 ---
 
@@ -20,7 +20,7 @@
 
 [Getting Started](#getting-started)
 
-- [Netflix Clone](#netflix-clone)
+- [Tedwatch](#tedwatch)
   - [Quick Links](#quick-links)
   - [Demo](#demo)
     - [Live Site Demo](#live-site-demo)
