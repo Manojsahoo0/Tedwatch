@@ -1,70 +1,167 @@
-# Getting Started with Create React App
+# Netflix Clone
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- **Checkout branch "React-View" for frontend only Netflix Clone with React Redux**
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Quick Links
 
-### `npm start`
+[Demo](#demo)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- [Live Site Demo](#live-site-demo)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+[Tech Stack](#tech-stack)
 
-### `npm test`
+[Implementation Hightlights](#Implementation-Hightlights)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- [User Stories](#user-stories)
+- [Current Plans for Expansion](#current-plans-for-expansion)
+- [Future Plans for Expansion](#future-plans-for-expansion)
 
-### `npm run build`
+[Getting Started](#getting-started)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- [Netflix Clone](#netflix-clone)
+  - [Quick Links](#quick-links)
+  - [Demo](#demo)
+    - [Live Site Demo](#live-site-demo)
+  - [Tech Stack](#tech-stack)
+  - [Implementation Highlights](#implementation-highlights)
+    - [User Stories](#user-stories)
+    - [Future Plans for Expansion](#future-plans-for-expansion)
+  - [Getting Started](#getting-started)
+    - [Prerequisites](#prerequisites)
+      - [Tools \& Versions](#tools--versions)
+    - [Serving Application](#serving-application)
+      - [Tedwatch Server](#tedwatch-server)
+      - [Tedwatch Client](#tedwatch-client)
+  - [Deployment](#deployment)
+  - [Author](#author)
+  - [License](#license)
+  - [Acknowledgments](#acknowledgments)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+[Deployment](#deployment)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+[Author](#author)
 
-### `npm run eject`
+[Acknowledgments](#acknowledgments)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Demo
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Live Site Demo
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Demo: [Link](https://tedwatch.onrender.com)
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Tech Stack
 
-### Code Splitting
+- [React](https://github.com/facebook/react) . [TMDB](https://www.themoviedb.org/)
+  - web client & client data management
+- [Node.js](https://github.com/nodejs) ∙ [Expressjs](https://github.com/expressjs/express)
+  - web server & services in service oriented architecure
+- [MongoDb](https://www.mongodb.com/)
+  - persisted database for users
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+## Implementation Highlights
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- single page application web client with Vanilla Javascript and React.
+- service oriented architecure backend
+- REST for client server communication, JSON for inter service communication
+- scrape raw movie data from TMDB
+- provides processed TMDB movies data with our movie service API
+- MongoDb for user's database
 
-### Making a Progressive Web App
+### User Stories
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- users can register and log in to their account
+- landing page has collections of movies and series which are popular
+- users can search for movies or series
+- users can browse search result by pages
+- users can select and view details of any movie or series
+- users can add their review and rating in the movie/series details page
+- users can add or remove movie/series to his/her watchlist
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Future Plans for Expansion
 
-### Deployment
+- Optimize the app
+- Add recommendation system features for all users?
+- Add payment gateway like Razorpay?
+- scrape and stream videos for movies and series?
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `npm run build` fails to minify
+## Getting Started
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Prerequisites
+
+**!important** .env file is required for setting up environment variables for this project  
+ an example of .env file is located at root directory
+
+#### Tools & Versions
+
+| Tools         | Versions |
+| ------------- | -------- |
+| react         | 18.2.0   |
+| npm           | 6.1.0    |
+| nodejs        | 10.7.0   |
+| express       | 4.18.2   |
+| mongoose      | 7.4.2    |
+
+
+### Serving Application
+
+#### Tedwatch Server
+
+- install dependencies & start Server
+
+```terminal
+cd Server
+npm install
+npm start
+```
+
+Application will be serving on http://localhost:8000
+
+#### Tedwatch Client
+
+- install dependencies & start application
+
+```terminal
+cd Client
+npm install
+npm start
+```
+
+Application will be serving on http://localhost:3000
+
+---
+
+## Deployment
+
+- This app is already deployed on Renderer
+
+---
+
+## Author
+
+- Manoj Kumar Sahoo
+
+---
+
+## License
+
+This project is licensed under the Manoj Sahoo
+
+---
+
+## Acknowledgments
+
+- No
+
+---
